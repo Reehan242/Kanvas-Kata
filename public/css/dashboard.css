@@ -1,0 +1,60 @@
+.bi {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar .nav-link {
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.sidebar .nav-link.active {
+  color: #2470dc;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+}
+
+/*
+ * Navbar
+ */
+
+/* .navbar .form-control {
+  padding: .75rem 1rem;
+} */
+
+
+/* BORDER */
+
+/* body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+header {
+  min-height: 50px;
+  
+}
+
+footer {
+  min-height: 50px;
+  background: PapayaWhip;
+} */
+
+
+/* The article fills all the space between header & footer */
+
+/* body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+} */

@@ -1,0 +1,388 @@
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-registration {
+  border-radius: 0;
+  margin-bottom: -1px;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+.body-bg-img {
+  background: url('/img/blog_wallpaper2.jpg');
+  background-size: cover;
+}
+
+.body-bg-corn {
+  background-color: black;
+}
+
+header {
+    min-height: 50px;
+}
+
+footer {
+    min-height: 50px;
+    background-color: black;
+}
+
+
+/* The article fills all the space between header & footer */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Default tombol (hidden) */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+/* Tombol muncul */
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background-color: #0056b3;
+}
+
+/* Gaya untuk memastikan responsif */
+@media (max-width: 768px) {
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .footer-text {
+      font-size: 12px;
+      text-overflow: clip;
+    }
+}
+
+.highlight-blue {
+  transition: all 0.3s ease-in-out; /* Animasi perubahan */
+  color: blue;
+  padding: 4px 10px;
+}
+
+.highlight-blue:hover {
+  background-color: rgb(37, 116, 214); /* Warna latar belakang saat hover */
+  color: white; /* Warna teks saat hover */
+}
+.like-icon {
+  font-size: 1rem; /* Ukuran default */
+  display: inline-flex;
+  align-items: center; /* Agar teks dan ikon sejajar */
+}
+
+.like-icon i {
+  margin-left: 0.2rem; /* Jarak kecil antara angka dan ikon */
+}
+
+
+/* Media query untuk layar dengan lebar 279px ke bawah */
+@media (max-width: 234px) {
+  .highlight-blue {
+    font-size: 14px; /* Kurangi ukuran font */
+    padding: 4px 8px; /* Kurangi padding */
+    border-width: 1px; /* Kurangi ketebalan border */
+  }
+}
+/* Media query untuk layar dengan lebar 279px ke bawah */
+@media (max-width: 212px) {
+  .highlight-blue {
+    font-size: 12px; /* Kurangi ukuran font */
+    padding: 3px 6px; /* Kurangi padding */
+    border-width: 0.75px; /* Kurangi ketebalan border */
+  }
+  .like-icon {
+    font-size: 0.8rem; /* Ukuran font lebih kecil */
+  }
+
+  .like-icon i {
+    font-size: 0.8rem; /* Ukuran ikon lebih kecil */
+  }
+}
+
+.card-scale-up {
+  transition: transform 0.3s ease-in-out; /* Animasi transformasi */
+}
+
+.card-scale-up:hover {
+  transform: scale(1.1); /* Membesarkan card sebesar 10% */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn-left {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-title,
+.animate-description,
+.animate-button,
+.animate-card {
+  opacity: 0; /* Pastikan elemen tersembunyi */
+}
+
+.animate-title.visible {
+  animation: fadeIn 0.5s ease-out;
+  opacity: 1; /* Pastikan elemen terlihat saat animasi dijalankan */
+}
+
+.animate-description.visible {
+  animation: fadeIn 1.0s ease-out;
+  opacity: 1;
+}
+
+.animate-button.visible {
+  animation: fadeIn 1.5s ease-out;
+  opacity: 1;
+}
+
+.animate-card.visible {
+  animation: fadeIn-left 1.0s ease-out;
+  opacity: 1;
+}
+
+/* Styling */
+.post-container {
+  position: relative;
+}
+.post-container h1 {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 0px 14px 16px rgba(0, 0, 0, 0.7);
+}
+
+.banner-container {
+  position: relative;
+  
+}
+
+.banner-container h1 {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 0px 14px 16px rgba(0, 0, 0, 0.7);
+}
+
+.banner-container p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.banner-container .btn-khusus {
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  border: 1px solid white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: white;
+}
+
+.banner-container .btn-khusus:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 450px) {
+  .banner-container h1 {
+    letter-spacing: 1px;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+  
+  .banner-container p {
+    font-size: 14px;
+    max-width: 440px;
+    margin: 0 auto;
+    line-height: 1.2;
+  }
+  
+  .banner-container .btn {
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    border: 1px solid white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: white;
+  }
+
+  nav ul.pagination {
+      font-size: 0.6rem; /* Mengecilkan ukuran font */
+  }
+
+  nav ul.pagination li.page-item {
+      margin: 0 0px; /* Mengurangi jarak antar item */
+  }
+
+  nav ul.pagination .page-link {
+      padding: 3px 8px; /* Mengurangi padding pada tombol */
+  }
+
+}
+
+/* Featured Image Styling */
+.featured-image img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+
+/* Pagination Customization */
+.pagination {
+  justify-content: center;
+}
+
+.pagination .page-item .page-link {
+  color: #007bff;
+  border: none;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+/* Transparent Navbar */
+.transparent-navbar {
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Semi-transparent black */
+  backdrop-filter: blur(8px);
+  /* Adds subtle blur effect */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /* Thin border for separation */
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+}
+
+/* Text Gradient for Visibility */
+.text-gradient {
+  background: linear-gradient(to right, #ffffff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  /* Shadow for visibility */
+}
+
+.text-gradient-2 {
+  background: linear-gradient(to right, red, black); /* Gradasi warna */
+  -webkit-background-clip: text; /* Memotong background ke teks */
+  -webkit-text-fill-color: transparent; /* Membuat latar teks transparan */
+  text-fill-color: transparent; /* Untuk browser modern */
+  text-shadow: none; /* Pastikan tidak ada bayangan teks yang mengganggu */
+}
+
+.text-gradient-3 {
+  background: linear-gradient(to right, blue, Black); /* Gradasi warna */
+  -webkit-background-clip: text; /* Memotong background ke teks */
+  -webkit-text-fill-color: transparent; /* Membuat latar teks transparan */
+  text-fill-color: transparent; /* Untuk browser modern */
+  text-shadow: none; /* Pastikan tidak ada bayangan teks yang mengganggu */
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  /* Highlight active links */
+}
+
+/* Navbar Toggler */
+.navbar-toggler-icon {
+  filter: invert(100%);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-item {
+  color: #ffffff;
+  transition: background 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile View */
+@media (max-width: 576px) {
+  .transparent-navbar {
+      backdrop-filter: blur(5px);
+  }
+}
