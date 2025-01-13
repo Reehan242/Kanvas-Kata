@@ -41,3 +41,12 @@ Kanvas Kata adalah sebuah web blog rework dari [Projek Laravel Blog-Post](https:
 - Pada .env, ubah settingan nya sesuai dengan apa yang akan digunakan (seperti db_name, username, host, password dsb.)
 - Jika sudah, projek sudah dapat dijalankan dengan mengetikan artisan command "php artisan serve".
 
+## Preview Project
+- Screenshot tampilan project
+![Screenshot of the app](preview_images/preview1.png "Home")
+![Screenshot of the app](preview_images/preview2.png "All Posts")
+![Screenshot of the app](preview_images/preview3.png "Categories")
+![Screenshot of the app](preview_images/preview4.png "Login")
+![Screenshot of the app](preview_images/preview5.png "Dashboard")
+![Screenshot of the app](preview_images/preview6.png "Post")
+![Screenshot of the app](preview_images/preview7.png "Post")
