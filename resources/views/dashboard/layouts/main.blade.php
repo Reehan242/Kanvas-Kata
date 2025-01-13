@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Han Blog | Dashboard</title>
+    <title>Kanvas Kata | Dashboard</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -143,20 +143,3 @@
 </html>
 
 
-
-
-{{-- <header>
-        @include('dashboard.layouts.header')
-    </header>
-
-    <main>
-        <div class="container-fluid">
-            <div class="row">
-                @include('dashboard.layouts.sidebar')
-
-                <div class="col-lg-10 ms-sm-auto px-5">
-                    @yield('container')
-                </div>
-            </div>
-        </div>
-    </main> --}}
